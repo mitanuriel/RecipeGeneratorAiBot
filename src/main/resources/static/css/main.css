@@ -1,9 +1,138 @@
-.result {
-    font-size: large;
-    font-style: italic;
-    color: darkblue;
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: #ffffff; /* Light background */
+    color: #333a56; /* Darker text for readability */
 }
 
-label {
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px #a2d2ff; /* Subtle shadow effect */
+}
+
+/* Main Container Styling */
+.recipe-generator {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+.recipe-header {
+    margin-bottom: 20px;
+}
+
+.title-main {
+    font-size: 2rem;
+    color: #333a56; /* Dark text color for contrast */
+    background-color: #ffcb77; /* Candy yellow background for the title */
+    padding: 10px 15px; /* Padding to create space around the text */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    text-shadow: none; /* Remove shadow for a cleaner look */
+    display: inline-block; /* Ensures background only covers the title text */
+    margin-top: 15px;
+}
+
+
+.description-main {
+    color: #4d5b9e;
+    font-size: 1.1rem;
+}
+
+.steps-main {
+    list-style: decimal inside;
+    color: #4d5b9e;
+    text-align: left;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-item {
+    margin: 5px 0;
+}
+
+/* Card Sections Styling */
+.recipe-section-simple, .recipe-section-ip, .project-info-section {
+    background-color: #3b4358; /* Darker blue-gray background for cards */
+    color: #eaeaea; /* Light text for better contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border: 2px solid #ffcb77; /* Candy yellow border for card sections */
+}
+
+/* Form Styling */
+.recipe-form, .info-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label-ingredients, .label-question {
     font-weight: bold;
+    color: #ffcb77; /* Candy yellow for labels */
+}
+
+.input-ingredients, .input-question {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffcb77; /* Candy yellow for input borders */
+    border-radius: 5px;
+    color: #333a56; /* Darker text within inputs */
+    background-color: #ffffff; /* Light background for inputs */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ffcb77; /* Candy yellow for buttons */
+    border-color: #ffcb77;
+    color: #333a56; /* Dark text on light button */
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ffb347;
+    border-color: #ffb347;
+}
+
+/* Spinner Styling */
+.spinner-border {
+    margin-left: 1em;
+    border-radius: 50%;
+    display: none;
+    border-color: #ffcb77; /* Candy yellow border for spinners */
+}
+
+/* Result Message Styling */
+.result-message {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333a56; /* Darker text color */
+    background-color: #ffcb77; /* Candy yellow background */
+    padding: 10px; /* Add some padding for better readability */
+    border-radius: 5px; /* Rounded corners for styling */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+/* Customizing Project Information Spinner */
+#spinner3 {
+    margin: 1em;
+    width: 3rem;
+    height: 3rem;
+    border-color: #ffcb77; /* Candy yellow for larger spinner */
+}
+
+/* Custom Classes for Section Titles */
+.card-title {
+    color: #ffcb77; /* Candy yellow for titles within dark cards */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Styling for Instructional Text in Forms */
+.instruction {
+    color: #ffcb77; /* Candy yellow for instructions */
+    font-style: italic;
 }

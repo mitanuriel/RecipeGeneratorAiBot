@@ -1,7 +1,7 @@
-package com.example.chatgptjokes.service;
+package com.example.recipegeneratoraibot2.service;
 
-import com.example.chatgptjokes.dtos.ChatCompletionResponse;
-import com.example.chatgptjokes.dtos.MyResponse;
+import com.example.recipegeneratoraibot2.dtos.ChatCompletionResponse;
+import com.example.recipegeneratoraibot2.dtos.MyResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -99,7 +99,7 @@ public class OpenAiServiceV1 {
     catch (Exception e) {
       System.out.println(e.getMessage());
       String msg = "Internal Server Error, while processing request. You could try again"+
-                   "( While you develop, make sure to consult the detailed error message on your backend)";
+              "( While you develop, make sure to consult the detailed error message on your backend)";
       throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, msg);
 
     }

@@ -1,10 +1,10 @@
-package com.example.chatgptjokes;
+package com.example.recipegeneratoraibot2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ChatgptJokesApplicationTests {
+class RecipeGeneratorAiBot2ApplicationTests {
 
 	@Test
 	void contextLoads() {
